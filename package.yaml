@@ -1,0 +1,41 @@
+name: nakadi-cli
+version: '0.1.0.0'
+category: Data
+author: Moritz Schulte
+maintainer: mtesseract@silverratio.net
+copyright: (c) 2017 Moritz Schulte
+license: BSD3
+homepage: https://github.com/mtesseract/nakadi-cli
+extra-source-files:
+- README.md
+ghc-options:
+- -Wall
+default-extensions:
+- NoImplicitPrelude
+- OverloadedStrings
+dependencies:
+- base >=4.7 && <5
+- safe-exceptions
+- nakadi-haskell
+- monad-logger
+- iso8601-time
+- http-types
+- http-conduit
+- lens
+- time
+- mtl
+- transformers
+- containers
+- text
+- bytestring
+- conduit
+- conduit-extra
+- conduit-combinators
+- optparse-applicative
+- classy-prelude
+- aeson
+- vector
+executables:
+  nakadi-cli:
+    main: Main.hs
+    source-dirs: src

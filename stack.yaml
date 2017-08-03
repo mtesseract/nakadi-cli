@@ -1,0 +1,11 @@
+resolver: lts-9.0
+
+packages:
+- '.'
+- location:
+   git: https://github.com/mtesseract/nakadi-haskell.git
+   commit: 5617a187260e2213ce329c2dbb88ff12e0c2b407
+  extra-dep: true
+extra-deps: []
+flags: {}
+extra-package-dbs: []
